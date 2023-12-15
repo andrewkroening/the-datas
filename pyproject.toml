@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "the-datas"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Kroening <111026320+andrewkroening@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "the_datas"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+altair = "^5.2.0"
+pandas = "^2.1.4"
+numpy = "^1.26.2"
+statsmodels = "^0.14.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+black = "^23.12.0"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
